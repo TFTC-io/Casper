@@ -3010,4 +3010,9 @@ Usage (In Ghost editor):
     .subscribe-form .success .message-success {
         color: color(var(--green) l(+5%) s(-5%));
     }
+
+    .card {
+        background: color(var(--darkmode));
+        border-color: color(var(--darkmode) l(+25%));
+    }
 }
