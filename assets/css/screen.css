@@ -3011,8 +3011,140 @@ Usage (In Ghost editor):
         color: color(var(--green) l(+5%) s(-5%));
     }
 
+}
+
+
+/* 13. TFTC
+/* ---------------------------------------------------------- */
+
+/* Header */
+
+.site-home-header {
+    background: #FF9900;
+    text-align: center;
+  }
+  .site-header-background {
+      background: inherit;
+  }
+.site-header {
+    background: #FF9900;
+}
+.site-header-background {
+    background: inherit;
+}
+.site-header-content {
+    padding-top: 0;
+    padding-bottom: 2vw;
+    min-height: 0;
+}
+.site-nav-main {
+	background: #FF9900;
+    position: inherit;
+}
+.site-nav-left {
+    flex-grow: 0;
+}
+.nav {
+    position: relative;
+}
+.site-home-header .site-header-content {
+    padding: 0 0 2vw;
+}
+.site-nav {
+    top: unset !important;
+}
+.site-nav.nav-center {
+    justify-content: center !important;
+}
+
+/* Footer */
+.site-footer {
+    background: #FF9900;
+}
+
+
+@-webkit-keyframes ticker {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  @keyframes ticker {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  .ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    padding-left: 100%;
+    box-sizing: content-box;
+    border-bottom: 1px solid black;
+    background: white;
+  }
+  .ticker-wrap .ticker {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+  }
+.ticker-wrap .ticker__item {
+    display: inline-block;
+    padding: 0 15rem;
+    font-size: 1.75rem;
+    color: black;
+  }
+
+
+/* 14. TFTC Dark Mode
+/* ---------------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+
+    .site-header {
+        background: black;
+    }
+    .site-home-header {
+        background: black;
+    }
+    .site-nav-main {
+        background: black;
+        position: inherit;
+    }
+    .site-footer {
+        background: black;
+    }
     .card {
         background: color(var(--darkmode));
         border-color: color(var(--darkmode) l(+25%));
+    }
+    .ticker-wrap {
+        background: color(var(--darkmode));
+    }
+    .ticker-wrap .ticker__item {
+        color: white;
+    }
+    .form-control, .form-control:disabled, .form-control[readonly], .input-group-prepend, .input-group-text {
+        border-color: color(var(--darkmode) l(+6%));
+        color: rgba(255, 255, 255, 0.9);
+        background: color(var(--darkmode) l(+3%));
     }
 }
