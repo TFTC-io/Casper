@@ -3057,12 +3057,29 @@ Usage (In Ghost editor):
     justify-content: center !important;
 }
 
+.nav {
+	flex-wrap: nowrap;
+}
+.site-header:before {
+  background: none;
+}
 /* Footer */
 .site-footer {
     background: #FF9900;
 }
 
+/* Buttons */
+.btn-primary {
+	color: #fff;
+    background-color: #FF9900;
+    border-color: #e58a02;
+}
+.btn-primary:hover {
+    background-color: #e68a00;
+    border-color: #cc7a00;
+}
 
+/* Ticker */
 @-webkit-keyframes ticker {
     0% {
       -webkit-transform: translate3d(0, 0, 0);
@@ -3114,6 +3131,38 @@ Usage (In Ghost editor):
     color: black;
   }
 
+  /* Misc */
+.inner {
+	max-width: 1200px;
+}
+.post-full-header {
+  padding: 3vw;
+}
+.close-icon {
+    padding: 0
+}
+.home-template {
+    background: #ffffff;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold !important;
+}
+ul[role=menu] {
+    font-weight: bold;
+    font-size: 13px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Audio Controls */
+audio { max-width: 100%; }
+
+/* Vue */
+[v-cloak] { display:none; }
+    * {
+  box-sizing: border-box;
+}
 
 /* 14. TFTC Dark Mode
 /* ---------------------------------------------------------- */
@@ -3146,5 +3195,9 @@ Usage (In Ghost editor):
         border-color: color(var(--darkmode) l(+6%));
         color: rgba(255, 255, 255, 0.9);
         background: color(var(--darkmode) l(+3%));
+    }
+    .btn-primary {
+
+        color: black;
     }
 }
