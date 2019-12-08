@@ -3053,10 +3053,15 @@ Usage (In Ghost editor):
 .site-nav {
     top: unset !important;
 }
-.site-nav.nav-center {
-    justify-content: center !important;
+::-webkit-scrollbar {
+    display: none;
 }
-
+.site-nav-right {
+    margin-right: auto;
+}
+.site-nav-left {
+    margin-left: auto;
+}
 .nav {
 	flex-wrap: nowrap;
 }
