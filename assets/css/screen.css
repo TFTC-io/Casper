@@ -313,12 +313,6 @@ body {
         height: 100%;
     }
 
-    .site-header-background:not(.responsive-header-img) .site-nav:after,
-    .site-nav-main .site-nav:after {
-        right: 0;
-        background: linear-gradient(to right, color(var(--darkgrey) l(-5%) a(0)) 0%,color(var(--darkgrey) l(-5%)) 100%);
-    }
-
     .nav li:last-of-type {
         padding-right: 20px;
     }
