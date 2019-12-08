@@ -2549,6 +2549,7 @@ Usage (In Ghost editor):
     bottom: 0;
     left: 0;
     display: block;
+    z-index: 10000;
 }
 
 .subscribe-close:before {
