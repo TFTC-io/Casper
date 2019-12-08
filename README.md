@@ -1,5 +1,7 @@
-# Casper
+# TFTC.io
+This Ghost theme is a modification of the default Ghost theme (Casper), for the website [TFTC.io](https://tftc.io).
 
+# Casper
 The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper! If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
 
 &nbsp;
