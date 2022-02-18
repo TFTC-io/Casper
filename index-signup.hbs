@@ -25,10 +25,14 @@ into the {body} of the default.hbs template --}}
 {{!-- The main content area --}}
 <main id="site-main" class="site-main outer">
     {{#page}}
-        <div>
-            <h2>{{title}}</h2>
-            {{content}}
-        </div>
+            <header class="post-full-header">
+                <h1 class="post-full-title">{{title}}</h1>
+            </header>
+            <section class="post-full-content">
+                <div class="post-content">
+                    {{content}}
+                </div>
+            </section>
     {{/page}}
     {{#if @member}}
     {{else}}
